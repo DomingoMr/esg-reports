@@ -15,3 +15,5 @@ openai:
     apiKey: ${API_KEY:}
     org-id: ${OPENAI_ORG_ID:}
     project-id: ${OPENAI_PROJECT_ID:}
+server:
+  forward-headers-strategy: framework
