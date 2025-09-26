@@ -7,9 +7,9 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:postgresql://localhost:5666/imnotascam
-    username: dj
-    password: alizz1624YhelrIoamJ86
+    url: ${DATASOURCE_URL:}
+    username: ${DATASOURCE_NAME:}
+    password: ${DATASOURCE_PASS:}
     driverClassName: org.postgresql.Driver
 openai:
     apiKey: ${API_KEY:}
